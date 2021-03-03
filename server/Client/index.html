@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORMWORKS COOLIO</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="/socket.io/socket.io.js"></script>        	
+
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <input oninput="buttonPress()" id="check" type="checkbox">LIGHT</input>
+    <br>
+    <label for="steering">Steering</label>
+    <input oninput="buttonPress()" id="steering" type="range" min="-1" max="1" value="0" step="0.01">
+    <br>
+    <label for="throttle">Throttle</label>
+    <input oninput="buttonPress()" id="throttle" type="range" min="-1" max="1" value="0" step="0.01" style="transform: rotate(270deg); margin-top: 100px; margin-left: -50px;">
+    <label for="brake">Brakes</label>
+    <input oninput="buttonPress()" id="brake" type="range" min="0" max="1" value="0" step="0.01" style="transform: rotate(270deg); margin-top: 100px; margin-left: -50px;">
+</body>  
+</html>
